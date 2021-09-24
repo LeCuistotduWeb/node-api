@@ -1,0 +1,16 @@
+{
+  "routeApi": "/api/v1/",
+  "port": "2000",
+  "db": {
+    "host": "localhost",
+    "user": "root",
+    "password": "root",
+    "name": "node_api_rest"
+  },
+  "errors": {
+    "wrongId": "wrong id",
+    "wrongMaxValue": "wrong max value",
+    "sameName": "Same name",
+    "nameAlreadyTaken": "name already taken"
+  }
+}

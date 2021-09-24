@@ -1,0 +1,95 @@
+{
+  "definitions": {},
+  "info": {
+    "title": "API REST Documentation",
+    "version": "1.0.0",
+    "license": {
+      "name": "ISC"
+    },
+    "description": "API REST"
+  },
+  "basePath": "/api/v1",
+  "host": "localhost:2000",
+  "tags": [
+    {
+      "name": "members",
+      "description": "Méthodes de gestion des utilisateurs"
+    }
+  ],
+  "paths": {
+    "/members": {
+      "get": {
+        "tags": ["members"],
+        "summary": "members",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {}
+      },
+      "post": {
+        "tags": ["members"],
+        "summary": "members",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "body",
+            "required": true
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/members/{id}": {
+      "get": {
+        "tags": ["members"],
+        "summary": "members/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {}
+      },
+      "put": {
+        "tags": ["members"],
+        "summary": "/members/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {}
+      },
+      "delete": {
+        "tags": ["members"],
+        "summary": "/members/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {}
+      }
+    }
+  },
+  "swagger": "2.0"
+}
